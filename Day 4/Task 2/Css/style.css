@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: hsl(41,5%,97%);   
+    box-sizing: border-box;
+}
+
+/* start hero section */
+.hero{
+    background-image: url(../Img/header-bg.jpg) ;
+    background-attachment: fixed; 
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px; 
+    text-align: center  ;
+    
+}
+.conatainer{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.hero h1{
+    color: hsl(41,72%,60%);
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.line-hero{
+    width: 7%;
+    height: 4px;
+    background-color: hsl(41,72%,60%);
+    margin:auto;
+}
+.prg-hero{
+    color: hsl(41,0%,100%);
+    font-size: 5rem ;
+}
+
+.prg-desc{
+    color:hsl(41,5%,60%);
+    font-size: 1.4rem;
+    margin-top:-50px ;
+    font: bold;
+}
+.desc-span{
+    text-decoration: underline;
+}
+.btn-container{
+    margin-top:5vw;
+}
+.btn-learn{
+    text-decoration: none;
+    border: 2.5px solid hsl(41,72%,100%);
+    color: hsl(41,72%,100%);
+    padding: 15px 30px;
+    border-radius: 40px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    /* display: inline-block; */
+    /* margin-top:50px ; */
+}
+
+.btn-learn:hover{
+    /* background-color: hsl(41,72%,100%); */
+    border: 2.5px solid hsl(41,72%,60%);
+    color: hsl(41,72%,60%);
+    /* transition: 0.3s; */
+}
+
+.btn-contact{
+    text-decoration: none;
+    border: 2.5px solid hsl(41,72%,60%);
+    background-color: hsl(41,72%,60%);
+    color: hsl(41,72%,100%);
+    padding: 15px 30px;
+    border-radius: 40px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    /* display: inline-block; */
+    margin-left:40px ;
+}
+.btn-contact:hover{
+    background-color:  hsl(41,72%,70%);
+    border: 2.5px solid hsl(41,72%,70%);
+}
+
+
+/* end hero section  */
+
+/* start  intro  section */
+
+.intro{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.intro h2{
+    color: hsl(41,72%,5%);
+    font-size: 3rem;
+}
+
+.line-intro{
+    width: 7%;
+    height: 4px;
+    background-color: hsl(41,72%,60%);
+    margin:auto;
+    /* padding-bottom: 10px; */
+}
+p{
+    font-size: 1.4rem;
+}
+.prg-intro{
+    padding-bottom: 70px;   
+}
+
+.box{
+    width: 95%;
+    padding : 15px 0;
+    background-color: hsl(41,72%,100%);
+    margin: auto;
+    text-align: center;
+    border-left: 10px solid hsl(41,72%,60%);
+    margin-top: 50px;
+}
+
+/* end intro section  */
+
+/* start contact section */
+
+.contact-us{
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+}
+.contact-head{
+    width: fit-content;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.line-contact{
+    width: 30%;
+    height: 4px;
+    background-color: hsl(41,72%,60%);
+    margin: auto;
+    
+}
+.contact-us h2{
+    color: hsl(41,72%,5%);
+    font-size: 3rem;
+    /* text-align: center; */
+}
+input ,textarea{
+    display: block;
+    width: 100%;
+}
+
+input{
+    padding: 10px;
+    margin: 10px 0;
+    /* border-radius: 5px; */
+}
+textarea{
+    padding: 10px;
+    margin: 10px 0;
+    height: 150px;
+}
+input[type="submit"]{
+    background-color: hsl(41,72%,60%);
+    color: hsl(41,72%,100%);
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: fit-content;
+    margin:20px 0;
+    padding:10px 30px;
+}
+/* end contact section  */
+
+/* start footer */
+footer{
+    width: 100%;
+    /* height: 100px; */
+    background-color: hsl(41,72%,3%);
+    text-align: center;
+    color: hsl(41,3%,60%);
+    padding: 10px 0;
+}
+.fa-heart{
+    color: hsl(41,72%,60%);
+}
+
+footer span{
+    color: hsl(41,72%,90%);
+}
