@@ -1,0 +1,678 @@
+:root {
+    --header-color: hsl(228, 32%, 19%);
+    --text-color1: hsl(14, 100%, 55%);
+    --text-color2: hsl(150, 47%, 49%);
+    --text-color3: hsl(228, 32%, 19%);
+    --background-color: hsl(0, 0%, 97%);
+}
+
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    color: var(--text-color3);
+    /* padding: 5px; */
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.marker1 {
+    color: var(--text-color1);
+    font-weight: bold;
+}
+
+.marker2 {
+    color: var(--text-color2);
+    font-weight: bold;
+}
+
+/* header */
+
+header {
+    background-color: var(--header-color);
+    color: white;
+    /* padding: 20px; */
+    /* text-align: center; */
+    vertical-align: middle;
+    height: 80px;
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 999;
+}
+
+header * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.img {
+    height: 100%;
+    padding: 8px 0;
+    margin-left: 5%;
+    width: 20%;
+}
+
+.img img {
+    height: 90%;
+}
+
+nav {
+    margin-left: 20%;
+    width: 54%;
+}
+
+/* when use margin by % will not display as i need, so i used px */
+nav ul {
+    display: inline-block;
+    list-style: none;
+    /* margin-right: 0.5%; */
+}
+
+nav ul li {
+    color: white;
+    margin-right: 60px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.pages {
+    position: relative;
+
+}
+
+.fa-chevron-down {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    vertical-align: middle;
+    color: white;
+}
+
+.pages-dropdown {
+    position: absolute;
+    /* display: inline-block; */
+    background-color: var(--background-color);
+    left: 0;
+    top: 23px;
+    width: 140px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 1px solid hsl(228, 32%, 85%);
+    display: none;
+}
+
+.pages-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--text-color3);
+
+}
+
+.pages-dropdown a:hover{
+    color: var(--text-color1);
+    background-color: white;
+    padding-left: 25px;
+}
+
+.line2 {
+    border-top: 1px solid hsl(228, 32%, 85%);
+    border-bottom: 1px solid hsl(228, 32%, 85%);
+}
+
+nav ul li:hover {
+    color: var(--text-color1);
+}
+
+.pages:hover .pages-dropdown {
+    display: block;
+}
+
+
+header button {
+    background-color: var(--text-color2);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* end header */
+
+/* main section  */
+
+.main-section {
+    width: 100%;
+    height: 100vh;
+    background: url(../image/slide-01.jpg );
+    padding-top: 80px;
+    color: white;
+
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+.fa-chevron-left {
+    left: 2%;
+}
+
+.fa-chevron-right {
+    right: 2%;
+}
+
+main .container {
+    width: 45%;
+    margin-left: 7%;
+}
+
+.main-section h1 {
+    font-size: 5rem;
+}
+
+.line {
+    width: 15%;
+    height: 7px;
+    border-radius: 5px;
+    margin: 10% 0;
+    background-color: white;
+}
+
+.main-section .des {
+    width: 90%;
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 80%);
+}
+
+.main-section .btns {
+    margin-top: 15%;
+}
+
+.btn1,
+.btn2 {
+
+    color: hsl(0, 0%, 100%);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn1 {
+    background-color: var(--text-color2);
+    margin-right: 5%;
+}
+.btn1:hover {
+    background-color: hsl(150, 47%, 39%);
+}
+
+.btn2 {
+    background-color: var(--text-color1);
+}
+
+.btn2:hover {
+    background-color: hsl(14, 100%, 45%);
+}
+
+
+/* end main section  */
+
+/* fetures section */
+
+.fetures-section {
+    width: 100%;
+    height: 100vh;
+    padding: 4%;
+}
+
+.fetures-section .container {
+    width: 86%;
+    margin: auto;
+    height: 100%;
+    /* padding: 1% 0; */
+    position: relative;
+}
+
+/* height with % don't work */
+.feture-box {
+    display: inline-block;
+    width: 45%;
+    /* margin: 0 2%; */
+    padding: 4% 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-top: 2%;
+
+    /* font-size: 1 rem; */
+}
+
+.culm1 {
+    /* display: inline-block; */
+    margin-right: 3%;
+}
+
+.icon-div {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    padding-left: 2%;
+    /* padding-top: 5%; */
+
+}
+
+.icon-div i {
+    font-size: 4rem;
+    color: var(--text-color2);
+    display: block;
+    text-align: center;
+}
+
+/* i don't know, why this is occure? */
+.icon-div i:hover {
+    padding-top: 10%;
+}
+
+.content {
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px ;
+}
+
+.cotent p {
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 60%);
+}
+
+/* end feture section  */
+
+/* start fetures overview section */
+
+.fetures-overview-section{
+    width: 100%;
+    height: 40vh;
+    margin: 5% 0;
+    background: url(../image/cta-bg.jpg);
+    color: white;
+    /* vertical-align: top; */
+    padding-top: 6%;
+}
+.feture-overview-content {
+    display: inline-block;
+    width: 30%;
+    margin-left: 5%;
+    font-size: 1.8rem;
+    height: 100%;
+    vertical-align: middle;
+}
+.fetures-overview-section .btns {
+    padding-top: 2%;
+    width: 60%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: right;
+    display: inline-block;
+    /* margin-top: 15%; */
+}
+
+ /* end feture overview section  */
+
+ /*  about section */
+
+.about-section {
+    width: 85%;
+    margin: auto;
+    height: 100vh;
+}
+
+.about-section h2 {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold ;
+}
+
+.about-section .about-header {
+    font-size: 3rem;
+    font-weight: bold ;
+    text-align: center;
+    margin: 15px 0;
+
+}
+
+.about-dsc {
+    margin-top: 50px;
+}
+
+.about-analysis {
+    width: 65%;
+    display: inline-block;
+    height: 100%;
+    float: left;
+    padding-top: 3%;
+}
+
+.about-nav {
+    width: 100%;
+    margin-bottom: 4%;
+    
+}
+
+.about-nav ul {
+    list-style: none;
+}
+.about-nav ul li {
+    display: inline-block;
+    padding: 2% 4%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-right: 5%;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.about-nav ul li:hover {
+    cursor: pointer;
+    color: var(--text-color1);
+}
+
+.about-table{
+    width: 100%;
+
+}
+.about-table table {
+    width: 100%;
+}
+
+.about-table table th,td {
+    padding: 3% 0;
+    text-align: left;
+    border-bottom: 1px solid hsl(0, 0%, 90%) ;
+}
+
+.about-text{
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    float: right;
+    padding-top: 3%;
+}
+
+.about-text h3{
+    font-size: 1.8rem;
+    margin-bottom: 10%;
+    line-height: 40px;
+}
+
+.about-text p {
+    margin-bottom: 50px;
+    line-height: 40px;
+    font-size: 1.1rem;
+}
+
+.about-text p span{
+    font-weight: bold;
+}
+
+
+/* end about section */
+
+/* finacial section */
+.financial-plan-section {
+    width: 100%;
+    height: 100vh;
+    background: url(../image/calculator-bg.jpg) no-repeat center ;
+    background-size: cover;
+    color: white;
+    padding: 0 5%;
+}
+
+.financial-img{
+    width: 50%;
+    display: inline-block;
+    height: 105%;
+    position: relative;
+    float: left;
+    
+}
+.financial-img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 5%;
+}
+
+.financial-plan{
+    width: 40%;
+    display: inline-block;
+    height: 100%;
+    padding-top: 5%;
+    float: right;
+}
+
+.financial-plan h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.financial-plan h3{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.financial-plan div {
+    margin: 20px 0;
+}
+
+.financial-plan label {
+    display: block;
+}
+
+.financial-plan input ,.financial-plan select  {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    background-color: hsl(228,13%,42%);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.financial-plan input[type="submit"] {
+    background-color: var(--text-color1);
+    cursor: pointer;
+    padding: 15px 30px;
+    font-weight: normal;
+    font-size: 1.1rem;
+    width: fit-content;
+    margin: 40px 0 ;
+}
+.financial-plan input[type="submit"]:hover {
+    background-color: hsl(14, 100%, 40%);
+
+}
+.financial-plan input:focus ,.financial-plan select:focus {    
+    outline: 2px solid hsl(228, 71%, 37%);
+}
+
+
+.name{
+    width: 48%;
+    display: inline-block;
+    /* margin-right:20%; */
+}
+.email{
+    width: 48%;
+    display: inline-block;
+    margin-left:3% !important;
+}
+
+
+
+/* end financial section */
+
+/* testimomials section */
+
+.testimonials-section {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding:5% 0;
+}
+.testimonials-section h3{
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+.testmonials-box{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px hsl(0, 0%, 60%);
+    position: relative;
+}
+
+.testmonials-des{
+    display: inline-block;
+    float: left;
+    width: 80%;
+    height: 100%;
+    padding: 4% 1% 4% 4%;
+    text-align: left;
+}
+.testmonials-img{
+    display: inline-block;
+    width: 20%;
+    float: right;
+    height: 100%;
+}
+.testmonials-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+}
+.fa-quote-left{
+    text-align: center;
+    color: white;
+    background-color: var(--text-color2);
+    width: 10%;
+    border-radius: 5px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 3rem;
+    display: block;
+}
+
+.testmonials-des p{
+    margin: 20px 0;
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+
+.testmonials-des h4 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+.position{
+    margin: 5px 0 !important;
+}
+
+.testmonials-nav{
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    
+}
+
+.testmonials-nav span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: hsl(14, 100%, 70%);
+    margin-right: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.testmonials-nav span:hover{
+    background-color: hsl(14, 100%, 55%);
+}
+
+
+/* end testmonials section */
+
+/* client section */
+.client-section{
+    background-color: hsl(228, 32%, 19%);
+    height: 30vh;
+    vertical-align: middle;
+    text-align: center;
+}
+.client-section img{
+    width: 100%/6;
+    height: 100%/6;
+    position: relative;
+    top: 40%;
+    margin-right: 5%;
+    /* line-height: 30vh; */
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* i am not able to do  blur when hover */
+
+/* end of clinet section */
+
+/* footer */
+
+footer{
+    height: 100px;
+    background-color: hsl(228, 32%, 10%);
+    text-align: center;
+    color: hsl(0, 0%, 90%);
+    padding: 20px 0;
+}
+footer p{
+    font-size: 1.1rem;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+footer span:hover{
+    cursor: pointer;
+    color: hsl(228, 71%, 37%);
+}
+
+
+
+
+
