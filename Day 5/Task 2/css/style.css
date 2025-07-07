@@ -89,7 +89,7 @@ nav ul li {
 
 .pages {
     position: relative;
-
+    padding: 20px 0;
 }
 
 .fa-chevron-down {
@@ -104,12 +104,14 @@ nav ul li {
     /* display: inline-block; */
     background-color: var(--background-color);
     left: 0;
-    top: 23px;
+    top: 50px;
     width: 140px;
     font-size: 0.9rem;
     border-radius: 5px;
     border: 1px solid hsl(228, 32%, 85%);
     display: none;
+    transition-property: display;
+    /* transition-delay: 5s;  */
 }
 
 .pages-dropdown a {
@@ -158,6 +160,7 @@ header button {
     width: 100%;
     height: 100vh;
     background: url(../image/slide-01.jpg );
+    background-size: cover;
     padding-top: 80px;
     color: white;
 
@@ -412,6 +415,7 @@ main .container {
     padding: 3% 0;
     text-align: left;
     border-bottom: 1px solid hsl(0, 0%, 90%) ;
+    border-collapse: collapse;
 }
 
 .about-text{
@@ -648,6 +652,11 @@ main .container {
     cursor: pointer;
 }
 
+.client-section img:hover{
+    filter:opacity(70%);
+}
+
+
 /* i am not able to do  blur when hover */
 
 /* end of clinet section */
@@ -670,9 +679,17 @@ footer p{
 footer span:hover{
     cursor: pointer;
     color: hsl(228, 71%, 37%);
+
 }
 
+.fa-angle-up{
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    color:red;
 
+}
 
 
 
