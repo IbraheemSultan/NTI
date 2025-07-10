@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
     <title>Chefer</title>
 </head>
 
@@ -20,41 +27,40 @@
             <p>CHEFER</p>
         </div>
         <div class="container">
-            <div class="conaction-info">
+            <div class="conaction-info passive">
                 <p>
-                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-envelope marker1"></i>
                     info@example.com
                 </p>
                 <p>
-                    <i class="fa-solid fa-phone"></i>
-                    +012 345 6789
+                    <i class="fa-solid fa-phone marker1"></i>
+                    +012 <span class="marker1">345 6789</span>
                 </p>
             </div>
+            <!-- <div class="dropdown active">
+                grip-lines
+            </div> -->
             <nav>
-                <ul>
-                    <li><a href="#home-section">Home</a></li>
-                    <li><a href="#abut-section">abut</a></li>
+                <ul class="header-nav-links">
+                    <li><a href="#home-section" class="home-icon">Home</a></li>
+                    <li><a href="#abut-section">about</a></li>
                     <li><a href="#menu-section">menu</a></li>
                     <li><a href="#chefs-section">chefs</a></li>
-                    <li>Pages <i class="fa-solid fa-caret-down"></i>
-                        <div class="dropdown">
-                            <ul>
-                                <li><a href="#features-section">Features</a></li>
-                                <li><a href="#blog-section">Blog Post</a></li>
-                                <li><a href="#testimonial-section">Testimonial</a></li>
-                                <li><a href="#">404 Error</a></li>
-                            </ul>
-                        </div>
+                    <li class="dropdown">Pages <i class="fa-solid fa-caret-down"></i>
+                        <ul class="dropdown-box">
+                            <li><a href="#features-section">Features</a></li>
+                            <li><a href="#blog-section">Blog Post</a></li>
+                            <li><a href="#testimonial-section">Testimonial</a></li>
+                            <li><a href="#">404 Error</a></li>
+                        </ul>
                     </li>
                     <li><a href="#contact-section">Contact</a></li>
                 </ul>
 
-                <div class="social-icons">
-                    <ul>
-                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                        <li><i class="fa-brands fa-twitter"></i></li>
-                        <li><i class="fa-brands fa-linkedin-in"></i></li>
-                    </ul>
+                <div class="social-icons passive">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </nav>
         </div>
@@ -66,7 +72,7 @@
 
     <main id="home-section">
         <div class="container">
-            <h1>Jhon Doe </h1>
+            <h1>John Doe </h1>
             <div class="intro">
                 <div class="intro-content">
                     <img src="Image-home-task/hero-2.jpeg" alt="">
@@ -76,7 +82,7 @@
                         duo justo et tempor consetetur takimata eirmod.</p>
                 </div>
                 <div class="intro-content">
-                    <img src="Image-home-task/hero-1.jpeg" alt="">
+                    <img src="Image-home-task/hero-1.jpeg" class="center" alt="">
                 </div>
                 <div class="intro-content">
                     <p>Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos
@@ -97,8 +103,8 @@
 
         <div class="container">
             <div class="about-img">
-                <img src="Image-home-task/about-round.png" alt="">
-                <img src="Image-home-task/about.jpeg" alt="">
+                <img src="Image-home-task/about-round.png" alt="" class="round-img">
+                <img src="Image-home-task/about.jpeg" alt="" class="roind-img">
             </div>
             <div class="about-content">
                 <div class="content-text">
@@ -186,27 +192,36 @@
                     <h4>Best Chef</h4>
                     <p>Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd elitr duo vero amet
                         amet stet</p>
-                    <a href="">Read More</a>
+                    <a href="">
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
                 <div class="feature-box">
                     <img src="Image-home-task/feature-2.png" alt="feature">
                     <h4>Menu Variations</h4>
                     <p>Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd elitr duo vero amet
                         amet stet</p>
-                    <a href="">Read More</a>
+                    <a href="">
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
                 <div class="feature-box">
                     <img src="Image-home-task/feature-3.png" alt="feature">
                     <h4>Healthy Food</h4>
                     <p>Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd elitr duo vero amet
                         amet stet</p>
-                    <a href="">Read More</a>
+                    <a href="">
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="feature-text">
-                    <h2>30% Discount</h2>
-                    <h3>For This Summer </h3>
-                    <button>Order Now</button>
-                </div>
+            </div>
+            <div class="feature-text">
+                <h2>30% Discount</h2>
+                <h3>For This Summer </h3>
+                <button>Order Now</button>
             </div>
         </div>
     </section>
@@ -218,7 +233,7 @@
     <section class="menu-section" id="menu-section">
         <div class="menu-text">
             <h2>OUR MENU</h2>
-            <h3>Hands Craft More Than Meals</h3>
+            <h3>Hands Craft More <br> Than Meals</h3>
         </div>
         <div class="nav">
             <ul>
@@ -270,20 +285,45 @@
     <section id="chefs-section" class="chefs-section">
         <div class="container">
             <h2>EXPERT CHEFS</h2>
-            <h3>Let's Meet The Expert</h3>
+            <h3>Let's Meet The <br> Expert</h3>
             <div class="chefs-boxes">
-                <div class="chefs-box">
-                    <h4>John Deo</h4>
-                    <p>MASTER CHEF</p>
+                <div class="chefs-box chefs-box1">
+
+                    <div class="chef-info">
+                        <h4>John Deo</h4>
+                        <p>MASTER CHEF</p>
+                    </div>
+                    <div class="social-icons passive">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-                <div class="chefs-box">
-                    <h4>John Deo</h4>
-                    <p>ASSISTANT</p>
+                <div class="chefs-box chefs-box2">
+
+                    <div class="chef-info">
+                        <h4>John Deo</h4>
+                        <p>ASSISTANT</p>
+                    </div>
+                    <div class="social-icons passive">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-                <div class="chefs-box">
-                    <h4>John Deo</h4>
-                    <p>ASSISTANT</p>
+                <div class="chefs-box chefs-box3">
+
+                    <div class="chef-info">
+                        <h4>John Deo</h4>
+                        <p>ASSISTANT</p>
+                    </div>
+                    <div class="social-icons passive">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -295,23 +335,27 @@
     <section class="testimonial">
         <div class="testimonial-img"></div>
         <div class="testimonial-content">
-            <h2>TESTIMONIAL</h2>
-            <h3>Our Client Say</h3>
-            <p><i class="fa-solid fa-quote-left"></i> Dolor sit amet consectetur adipisicing elit. Illo voluptatibus
-                facilis officia, nulla harum alias qui eius deserunt inventore vitae itaque velit? Maxime officiis
-                repellat quidem soluta, beatae vero natus.</p>
-        </div>
-        <div class="clinet">
-            <div class="client-img">
-                <img src="Image-home-task/testimonial-1.jpeg" alt="testimonial">
+            <div class="testimonial-text">
+
+                <h2>TESTIMONIAL</h2>
+                <h3>Our Client Say</h3>
+                <p><i class="fa-solid fa-quote-left"></i> Dolor sit amet consectetur adipisicing elit. Illo voluptatibus
+                    facilis officia, nulla harum alias qui eius deserunt inventore vitae itaque velit? Maxime officiis
+                    repellat quidem soluta, beatae vero natus.</p>
             </div>
-            <div class="client-content">
-                <h4>Client Name</h4>
-                <p>PROFESSION</p>
+            <div class="clinet">
+
+                <div class="client-img">
+                    <img src="Image-home-task/testimonial-1.jpeg" alt="testimonial">
+                </div>
+                <div class="client-content">
+                    <h4>Client Name</h4>
+                    <p>PROFESSION</p>
+                </div>
             </div>
             <div class="arrow-box">
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-left arrow"></i>
+                <i class="fa-solid fa-arrow-right arrow"></i>
             </div>
         </div>
     </section>
@@ -323,7 +367,7 @@
     <section class="blog-section">
         <div class="container">
             <h2>OUR BLOG</h2>
-            <h3>Latest Articles From Food Blog</h3>
+            <h3>Latest Articles <br> From Food Blog</h3>
             <div class="blog-boxes">
                 <div class="blog-box">
                     <div class="blog-img">
@@ -392,15 +436,15 @@
             <div class="container">
                 <div class="footer-box">
                     <h3>Get In Touch</h3>
-                    <div class="address">
+                    <div class="icon">
                         <i class="fa-solid fa-location-dot"></i>
                         <p>123 Street,New York,USA</p>
                     </div>
-                    <div class="email">
+                    <div class="icon">
                         <i class="fa-regular fa-envelope-open"></i>
                         <p>info@example.com</p>
                     </div>
-                    <div class="phone">
+                    <div class="icon">
                         <i class="fa-solid fa-phone"></i>
                         <p>+012 345 6789</p>
                     </div>
@@ -475,7 +519,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-box">
+                <div class="footer-box footer-newsletter">
                     <h3>Newsletter</h3>
                     <h4>SUBSCRIBE OUR NEWSLETTER</h4>
                     <p>Amet justo diam dolor rebum lorem sit stet sea justo kasd</p>
@@ -483,12 +527,13 @@
                         <input type="email" placeholder="Enter Your Email">
                         <button type="submit">Sign Up</button>
                     </form>
-                </div>                
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; <span class="bold">Your Site Name.</span> All Rights Reserved. Distributed by <span class="bold">ThemeWagon</span></p>
+                <p>&copy; <span class="bold">Your Site Name.</span> All Rights Reserved. Distributed by <span
+                        class="bold">ThemeWagon</span></p>
                 <p>Designed by <span class="bold">HTML Codex</span></p>
             </div>
         </div>
