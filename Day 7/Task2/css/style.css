@@ -1,4 +1,4 @@
-*,
+    *,
 body,
 html {
     margin: 0;
@@ -684,7 +684,7 @@ h1 {
 .chefs-boxes {
     display: flex;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 100%;
     height: 100%;
 }
 
