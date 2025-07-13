@@ -1,0 +1,53 @@
+.raleway {
+    font-family: "Raleway", sans-serif;
+}
+
+
+.a-custm:hover{
+    color: green;
+    border-color: green !important;
+}
+
+/* ________________________  hero section custmise _____________________________*/
+
+
+/* nav icon */
+.carousel-control-next:hover .nav-icon-custmise , .carousel-control-prev:hover .nav-icon-custmise{
+    background-color: green;
+    outline: 1rem solid green;
+    border-radius: 50%;
+}
+
+/* custem indicator  ---> when i use it js is disable, so i comment it  */
+/* .indicators-cust{
+    height: 1rem !important;
+    width: 1rem !important;
+} */
+
+/* .indicators-cust:active{
+    background-color: green;
+} */
+
+.porfolio-btn-active{
+    
+    color: white !important;
+    background: green !important;
+}
+
+.porfolio-btn:hover , .porfolio-btn:active{
+    color: white !important;
+    background: green !important;
+}
+
+.transition{
+    transition: all 0.3s ;
+}
+.fig-img:hover .fig-info{
+    
+    display: flex !important;
+    width: 100%;
+}
+
+.client-box:hover .client-img{
+    width: 75% !important;
+}
