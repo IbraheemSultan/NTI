@@ -22,6 +22,7 @@ img {
     --text-color-orange: hsl(15, 96%, 55%);
     --text-color-gray: hsl(240, 1%, 74%);
     ---font-2: 'Roboto', sans-serif;
+    font-size: 1vw;
 }
 
 body {
@@ -221,7 +222,7 @@ header .social-icons i:hover {
 
 
 main {
-    height: 125vh;
+    /* height: 125vh; */
     padding: 15vh 0;
     background-color: var(--bg-color-primary);
 }
@@ -242,11 +243,14 @@ h1 {
 
 .intro {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+
     align-items: center;
     gap: 40px;
+    padding-top: 4rem;  
+
 }
 
 .intro-content {
@@ -277,7 +281,7 @@ h1 {
 .intro-content i {
     transform: scale(1, 2.5);
     font-size: 1.5rem;
-    padding: 2vh 1vw;
+    padding: 3rem 1rem;
     animation: arrow 1s infinite;
 }
 
@@ -300,8 +304,8 @@ h1 {
 /* __________________________ start about _________________________ */
 
 .about-section {
-    height: 110vh;
-    padding-top: 10vh;
+    /* height: 110vh; */
+    padding: 10vh 0;
     /* width: 100vw; */
 }
 
@@ -325,6 +329,7 @@ h1 {
     z-index: -999;
     animation: round-img 10s infinite linear;
 
+    width: 13rem;
 }
 
 @keyframes round-img {
@@ -338,7 +343,7 @@ h1 {
 }
 
 .about-img .roind-img {
-    border-top-left-radius: 300px;
+    border-top-left-radius: 23rem;
     width: 100%;
     height: 100%;
 
@@ -422,14 +427,16 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
+    flex-wrap: wrap;
 }
 
 .achivement-box {
     display: flex;
     width: calc(100% /4 -50px);
-    gap: 50px;
+    justify-content: space-evenly;
+    /* gap: 50px; */
     min-width: 200px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .achivement-icon {
@@ -462,9 +469,10 @@ h1 {
 /* _______________________ start feature _____________________________ */
 
 .feature {
-    margin-top: 20vh;
+    margin-top: 10rem;
     background: var(--bg-color-primary);
-    height: 100vh;
+    /* height: 100vh; */
+    padding-bottom: 4rem;
 }
 
 .feature .container {
@@ -472,15 +480,16 @@ h1 {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .feature-boxes {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: -100px;
+    margin-top: -5rem;
     /* height: 70%; */
+    margin-top: -5rem;
 }
 
 .feature-box {
@@ -1001,7 +1010,7 @@ footer {
 
 .footer-top {
     background-color: var(--bg-color-primary);
-    height: 40vh;
+    /* height: 40vh; */
 }
 
 .footer-top i {
@@ -1067,7 +1076,7 @@ footer {
 
 
 .footer-links {
-    margin-top: .7rem;
+    margin-top: 1rem;
 }
 
 .footer-newsletter {
@@ -1079,7 +1088,7 @@ footer {
     align-items: center;
     text-align: center;
     width: 30%;
-    padding: 0 2rem;
+    padding:  2rem;
 }
 .footer-newsletter h3{
     margin-top: 1rem;
@@ -1096,9 +1105,10 @@ footer {
 
 .footer-newsletter form {
     width: 100%;
-    height: 20%;
+    height: 6rem;
     margin: auto;
     display: flex;
+    padding-top: 2rem;
     /* background-color: red; */
 }
 
