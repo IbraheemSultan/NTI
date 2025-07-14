@@ -3,7 +3,7 @@
 }
 
 
-.a-custm:hover{
+.a-custm:hover {
     color: green;
     border-color: green !important;
 }
@@ -12,7 +12,8 @@
 
 
 /* nav icon */
-.carousel-control-next:hover .nav-icon-custmise , .carousel-control-prev:hover .nav-icon-custmise{
+.carousel-control-next:hover .nav-icon-custmise,
+.carousel-control-prev:hover .nav-icon-custmise {
     background-color: green;
     outline: 1rem solid green;
     border-radius: 50%;
@@ -28,26 +29,112 @@
     background-color: green;
 } */
 
-.porfolio-btn-active{
-    
+.porfolio-btn-active {
+
     color: white !important;
     background: green !important;
 }
 
-.porfolio-btn:hover , .porfolio-btn:active{
+.porfolio-btn:hover,
+.porfolio-btn:active {
     color: white !important;
     background: green !important;
 }
 
-.transition{
-    transition: all 0.3s ;
+.transition {
+    transition: all 0.3s;
 }
-.fig-img:hover .fig-info{
-    
+
+.fig-img:hover .fig-info {
+
     display: flex !important;
     width: 100%;
 }
 
-.client-box:hover .client-img{
+.client-box:hover .client-img {
     width: 75% !important;
+}
+
+
+.services-section .card a:hover .service-icons i {
+    color: white
+}
+
+.services-section .card a:hover .service-icon1 svg path {
+    color: aqua;
+}
+
+.services-section .card a:hover .service-icon2 svg path {
+    color: orange;
+}
+
+.services-section .card a:hover .service-icon3 svg path {
+    color: green;
+}
+
+.services-section .card a:hover .service-icon4 svg path {
+    color: brown;
+}
+
+.services-section .card a:hover .service-icon5 svg path {
+    color: blueviolet;
+}
+
+.services-section .card a:hover .service-icon6 svg path {
+    color: deeppink;
+}
+
+.service-icon1 i {
+    color: aqua;
+}
+
+.service-icon2 i {
+    color: orange;
+}
+
+.service-icon3 i {
+    color: green;
+}
+
+.service-icon4 i {
+    color: brown;
+}
+
+.service-icon5 i {
+    color: blueviolet;
+}
+
+.service-icon6 i {
+    color: deeppink;
+}
+
+@media (max-width:768px) {
+
+    .position-md-static {
+        position: static !important;
+    }
+
+    .w-md-100 {
+        width: 100% !important;
+
+    }
+
+    
+    .fig-info h3,
+    .fig-info p {
+        font-size: .5rem;
+    }
+}
+
+
+
+/* portfolio section */
+
+.fig-images {
+    display: grid;
+
+}
+
+.w-100-3 {
+    width: calc(100vw / 3) !important;
 }
