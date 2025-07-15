@@ -146,7 +146,7 @@ function validition() {
         output = n1 % n2;
         break;
     }
-    console.log(output)
+    console.log(output);
     document.getElementById("output").innerHTML = output;
     return false;
   } else {
