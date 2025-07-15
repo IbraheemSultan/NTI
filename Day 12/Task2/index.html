@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Js</title>
+    <style>
+        th,
+        td {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Marks -->
+    <section class="marks">
+        <h2> 1. Calc Grads</h2>
+        <div class="input">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Physics</th>
+                    <th>Chemistry</th>
+                    <th>Biology</th>
+                    <th>Mathematics</th>
+                    <th>Computer</th>
+                </tr>
+                <form action="" id="myForm">
+                    <tr>
+
+                        <td>Enter your Grads</td>
+                        <td> <input max="20" min="0" type="number" name="Physics" id="physicsMarks" required></td>
+                        <td> <input max="20" min="0" type="number" name="Chemistry" id="chemistryMarks" required></td>
+                        <td> <input max="20" min="0" type="number" name="Biology" id="biologyMarks" required></td>
+                        <td> <input max="20" min="0" type="number" name="Mathematics" id="mathematicsMarks" required>
+                        </td>
+                        <td> <input max="20" min="0" type="number" name="Computer" id="computerMarks" required></td>
+                        <td>
+                            <input type="submit" onclick=""></input>
+                        </td>
+                    </tr>
+                </form>
+                <tr>
+                    <td> Grads : </td>
+                    <td id="physicsGrad"></td>
+                    <td id="chemistryGrad"></td>
+                    <td id="biologyGrad"></td>
+                    <td id="mathematicsGrad"></td>
+                    <td id="computerGrad"></td>
+                </tr>
+                <tr>
+                    <td> Percentage : </td>
+                    <td id="physicsPercentage"></td>
+                    <td id="chemistryPercentage"></td>
+                    <td id="biologyPercentage"></td>
+                    <td id="mathematicsPercentage"></td>
+                    <td id="computerPercentage"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <hr>
+
+    <!--Min&Max  -->
+    <section class="clacMinMax">
+        <h2>2. Calc Min & Max</h2>
+        <div class="container" style="display: flex;">
+            <form name="clacMinMax" action="" width="50%">
+                <label for="n1">Enter number 1</label>
+                <input type="number" name="n1" id="">
+                <label for="n2">Enter number 2</label>
+                <input type="number" name="n2" id="">
+                <label for="n3">Enter number 3</label>
+                <input type="number" name="n3" id="">
+                <input type="submit">
+            </form>
+        </div>
+        <p>Min Element : <span id="min"> </span></p>
+        <p>Max Element : <span id="max"></span></p>
+        </div>
+
+    </section>
+
+    <hr>
+    <!-- Positive Or Negative Value  -->
+    <section class="posOrNeg">
+        <h2>3. Positive || Negative </h2>
+        <div class="container" style="display: flex;">
+            <form name="posOrNeg" action="" width="50%">
+                <label for="n1">Enter number </label>
+                <input type="number" name="n1" id="">
+                <input type="submit">
+            </form>
+        </div>
+        <p> Type : <span id="pos"> </span></p>
+        </div>
+
+    </section>
+    
+    <hr>
+
+    <!--  Even Or Odd -->
+
+    <section class="">
+        <h2>4.  Even Or Odd </h2>
+        <div class="container" style="display: flex;">
+            <form name="evenOrOdd" action="" width="50%">
+                <label for="n1">Enter number </label>
+                <input type="number" name="n1" id="">
+                <input type="submit">
+            </form>
+        </div>
+        <p>Type : <span id="type"> </span></p>
+        </div>
+
+    </section>
+
+    <hr>
+    
+    <!-- Calculate specific root -->
+
+        <section class="calcRoot">
+        <h2>5. Calculate specific root </h2>
+        <div class="container" style="display: flex;">
+            <form name="calcRoot" action="" width="50%">
+                <label for="n1">Enter number </label>
+                <input type="number" name="n1" id="">
+                <label for="n1">Enter root number </label>
+                <input type="number" name="n2" id="">
+                <input type="submit">
+            </form>
+        </div>
+        <p> Value : <span id="value"> </span></p>
+        </div>
+
+    </section>
+
+    <hr>    
+
+    <!-- simple-calculator -->
+
+    <section class="simple-calculator">
+        <h2>6. Calculate specific root </h2>
+        <div class="container" style="display: flex;">
+            <form name="simple" onsubmit="return validition()" width="50%">
+                <label for="n1">Enter number </label>
+                <input type="number" name="n1" id="">
+                <label for="n2">Enter number </label>
+                <input type="number" name="n2" id="">
+                <label for="n1">Enter operation  </label>
+                <input type="text" name="oper" id="">
+                <input type="submit">
+            </form>
+        </div>
+        <p id="msg"></p>
+        <p> Value : <span id="output"> </span></p>
+        </div>
+    </section>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
