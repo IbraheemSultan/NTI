@@ -119,6 +119,8 @@ function validition() {
   let s = simple["oper"].value;
   let output;
   let x;
+  n1 = Number(n1);
+  n2 = Number(n2);
   const arr = ["+", "-", "*", "/", "%"];
   let bool = false;
   for (i = 0; i < 5; i++) {
@@ -148,6 +150,7 @@ function validition() {
     }
     console.log(output);
     document.getElementById("output").innerHTML = output;
+    document.getElementById("msg").innerHTML = "";
     return false;
   } else {
     document.getElementById("msg").innerHTML = "Not Valud Valie";

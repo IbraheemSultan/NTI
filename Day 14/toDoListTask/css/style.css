@@ -1,0 +1,121 @@
+body {
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: fit-content;
+    padding: 1rem;
+    padding-left: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem .5rem gray;
+    width: 70%;
+}
+
+.box h1 {
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    
+    width: 100%;
+}
+
+#newTask {
+    padding: 1rem;
+    width: 70%;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    border: none;
+    border: 1px solid gray;
+}
+
+
+#submit {
+    padding: 1rem;
+    width: 20%;
+    background-color: hsl(122, 39%, 49%);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:active{
+    background-color: hsl(122, 39%, 60%);
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.taskCheck {
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    accent-color: green;
+    cursor: pointer;
+}
+
+.taskContent {
+    width: 90%;
+    overflow: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.bi-trash3 {
+    cursor: pointer;
+    color: hsl(6, 78%, 57%);
+    width: 10%;
+    padding-left: 2rem;
+    text-decoration: line-through;
+}
+
+.deletedTask{
+    text-decoration: line-through;
+}
+.unDeletedTask{
+    text-decoration: none;
+}
+
+.deletAll{
+    width: 30%;
+    height: 4rem;
+    background-color: hsl(6, 78%, 57%);
+    color: white;
+    font-size: 2rem;
+    border:none;
+    border-radius: .7rem;
+    margin: 1rem 0;
+    align-self: flex-start;
+
+    display: none;
+}
+
+.show{
+    display: block;
+}
