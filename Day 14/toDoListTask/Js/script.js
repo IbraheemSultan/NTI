@@ -8,10 +8,9 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
   let inputText = form["newTask"].value;
   console.log(inputText);
-  if (inputText == ""){
+  if (inputText == "") {
     swal("Error!", "Please Eneter Your Task!", "error");
-  } 
-  else {
+  } else {
     let clone = task.cloneNode(true);
     clone.classList.remove("none");
     clone.id = "task" + c++;
@@ -28,13 +27,12 @@ form.addEventListener("submit", function (e) {
     };
     deletAll.classList.add("show");
     deletAll.addEventListener("click", function (e) {
-      while(list.children.length > 1){
+      while (list.children.length > 1) {
         list.removeChild(list.lastChild);
       }
     });
   }
 });
-
 
 function deletTask() {
   task.classList.add("none");
