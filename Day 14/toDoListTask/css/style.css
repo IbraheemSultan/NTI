@@ -27,7 +27,15 @@ body {
     box-shadow: 0 0 1rem .5rem gray;
     width: 70%;
 }
+.list{
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+}
 .box h1 {
     font-size: 3rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
